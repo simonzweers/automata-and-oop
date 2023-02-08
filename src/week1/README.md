@@ -8,7 +8,7 @@ Een van de opgaven was om een automaat te maken in FLACI voor de FSAexec klasse 
 
 ![fsaexec-flaci](../../images/fsaexec-flaci.png)
 
-Om te testen heb ik 4 extra inputs aan de automaat gegeven:  
+Om te testen heb ik een aantal extra inputs aan de automaat gegeven:  
 `abcabacaaba`  
 `ababacaaba`  
 `abcabaaaba`  
