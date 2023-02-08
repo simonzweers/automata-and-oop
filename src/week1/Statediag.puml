@@ -1,13 +1,17 @@
 @startuml
 'https://plantuml.com/state-diagram
 
-note "maak het fsaExec diagram af" as n1
-
 [*] -> State0
 State0 --> State1 : b
 State0 --> State0 : a,c
+State1 --> State1 : b,c
 State1 --> State2 : a
-State2 --> State3
+State2 --> State0 : a
+State2 --> State1 : b
+State2 --> State3 : c
+State3 --> State0 : a
+State3 --> State1 : b
+State3 --> State3 : c
 
 
 @enduml
