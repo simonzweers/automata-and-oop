@@ -1,18 +1,13 @@
 # Automata & Programming 2023.1
 
-Uitwerking van het practicum, toelichting en antwoorden.
+Repository van Simon Zweers IT102
 
-Wijzig dit document, verwijs naar de verslagen in week1 t/m week5
+Link naar de verslagen van elke week:
 
 * [Week 1 uitwerking](./src/week1)
-
 * [Week 2 uitwerking](./src/week2)
-
 * [Week 4 uitwerking](./src/week4)
-
 * [Week 5 uitwerking](./src/week5)
-
-
 
 [Doe een markdown tutorial!](https://www.markdowntutorial.com)
 
