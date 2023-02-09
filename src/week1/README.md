@@ -20,6 +20,7 @@ Om te testen heb ik een aantal extra inputs aan de automaat gegeven:
 Deze inputs zijn allemaal in FLACI gesimuleerd om te checken:  
 ![](../../images/fsaexec-flaci-input-words.png)
 
+Hier het UML diagram:  
 ```plantuml
 'https://plantuml.com/state-diagram
 
