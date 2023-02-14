@@ -40,3 +40,42 @@ class Auto {
 ![autoklasse](../../images/autoclass.jpeg)
 
 Een belangrijk verschil tussen de twee is dat je in UML wel alle eigenschappen kan verwerken, maar in IntelliJ diagrams niet.
+
+De volgende opdracht was om een huisdier klassenstructuur te maken.
+Hieronder zie je de in UML nagebouwde klassenstructuur:
+
+```plantuml
+@startuml
+
+skinparam linetype ortho
+
+class Huisdier {
+naam: String
+Huisdier(nieuweNaam: String)
+maakGeluid(): void
+watIsMijnNaam(): void
+}
+
+class Kat {
+Kat(nieuweNaam: String)
+maakGeluid()
+}
+
+class Hond {
+Hond(nieuweNaam: String)
+maakGeluid(): void
+}
+
+class Poedel {
+Poedel(nieuweNaam: String): 
+maakGeluid(): void
+}
+
+Huisdier <|-- Kat : Implements
+Huisdier <|-- Hond : Implements
+Hond <|-- Poedel : Implements
+Kat <|-- Tijger : Implements
+
+
+
+```

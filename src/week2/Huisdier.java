@@ -1,19 +1,32 @@
 package week2;
 
-import java.util.Scanner;
-
 public class Huisdier {
-    Scanner scanner = new Scanner(System.in);
-    String naam;
+    private final String naam;
 
-    Huisdier() {
-        System.out.println("Whats this pets name?");
-        naam = scanner.next();
+    /**
+     * Naam voor het huisdier
+     * @param nieuweNaam naam voor het huidier
+     */
+    Huisdier(String nieuweNaam) {
+        this.naam = nieuweNaam;
     }
 
-    void maakGeluid() {}
+    /**
+     * Geeft het geluid wat het dier maakt
+     */
+    void maakGeluid() {
+        System.out.println("Ik maak geen geluid");
+    }
 
+    /**
+     * Geeft de naam van het huisdier
+     */
     void watIsMijnNaam() {
-        System.out.printf("My name is: %s", naam);
+        System.out.printf("Mijn naam is: %s\n", naam);
+    }
+
+    @Override
+    public String toString() {
+        return naam;
     }
 }

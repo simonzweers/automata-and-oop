@@ -27,8 +27,19 @@ public class Main {
         auto3.wiebenik();
         auto4.wiebenik();
 
-        Huisdier mittens = new Poedel();
+        Huisdier[] dieren = {
+                new Huisdier("jeff"),
+                new Kat("mittens"),
+                new Hond("billy"),
+                new Poedel("princess"),
+                new Tijger("gerrit")
+        };
 
-        mittens.watIsMijnNaam();
+        for (Huisdier dier : dieren) {
+            dier.watIsMijnNaam();
+            dier.maakGeluid();
+            System.out.println(dier);
+        }
+
     }
 }
