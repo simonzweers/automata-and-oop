@@ -26,5 +26,9 @@ public class Main {
         auto2.wiebenik();
         auto3.wiebenik();
         auto4.wiebenik();
+
+        Huisdier mittens = new Poedel();
+
+        mittens.watIsMijnNaam();
     }
 }
