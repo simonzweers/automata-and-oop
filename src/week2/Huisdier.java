@@ -2,13 +2,15 @@ package week2;
 
 public class Huisdier {
     private final String naam;
+    public int leeftijd;
 
     /**
      * Naam voor het huisdier
      * @param nieuweNaam naam voor het huidier
      */
-    Huisdier(String nieuweNaam) {
+    Huisdier(String nieuweNaam, int leeftijd) {
         this.naam = nieuweNaam;
+        this.leeftijd = leeftijd;
     }
 
     /**
@@ -21,8 +23,8 @@ public class Huisdier {
     /**
      * Geeft de naam van het huisdier
      */
-    void watIsMijnNaam() {
-        System.out.printf("Mijn naam is: %s\n", naam);
+    void wieBenIk() {
+        System.out.printf("Mijn naam is: %s en ik ben %d jaar oud\n", naam, leeftijd);
     }
 
     @Override

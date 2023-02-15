@@ -2,41 +2,26 @@ package week2;
 
 public class Main {
     public static void main(String[] args) {
-        Auto auto1 = new Auto();
-        auto1.merk = "BMW";
-        auto1.model = "i3";
-        auto1.bouwjaar = 2010;
+        Auto auto1 = new Auto("BMW", "i3", 2010);
+        Auto auto2 = new Auto("Audi", "RS e-tron GT", 2020);
+        Auto auto3 = new Auto("Tesla", "Model 3", 2017);
+        Auto auto4 = new Auto("Jemama", "pipi", 1969);
 
-        Auto auto2 = new Auto();
-        auto2.merk = "Audi";
-        auto2.model = "RS e-tron GT";
-        auto2.bouwjaar = 2020;
-
-        Auto auto3 = new Auto();
-        auto3.merk = "Tesla";
-        auto3.model = "Model 3";
-        auto3.bouwjaar = 2017;
-
-        Auto auto4 = new Auto();
-        auto4.merk = "Jemama";
-        auto4.model = "pipi";
-        auto4.bouwjaar = 1969;
-
-        auto1.wiebenik();
-        auto2.wiebenik();
-        auto3.wiebenik();
-        auto4.wiebenik();
+        System.out.println(auto1);
+        System.out.println(auto2);
+        System.out.println(auto3);
+        System.out.println(auto4);
 
         Huisdier[] dieren = {
-                new Huisdier("jeff"),
-                new Kat("mittens"),
-                new Hond("billy"),
-                new Poedel("princess"),
-                new Tijger("gerrit")
+                new Huisdier("jeff", 12),
+                new Kat("mittens", 6),
+                new Hond("billy", 7),
+                new Poedel("princess", 33),
+                new Tijger("gerrit", 31)
         };
 
         for (Huisdier dier : dieren) {
-            dier.watIsMijnNaam();
+            dier.wieBenIk();
             dier.maakGeluid();
             System.out.println(dier);
         }

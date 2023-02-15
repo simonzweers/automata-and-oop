@@ -4,8 +4,8 @@ public class Poedel extends Hond{
     /**
      * @param nieuweNaam naam voor de poedel
      */
-    Poedel(String nieuweNaam) {
-        super(nieuweNaam);
+    Poedel(String nieuweNaam, int leeftijd) {
+        super(nieuweNaam, leeftijd);
     }
 
     @Override

@@ -5,8 +5,8 @@ public class Tijger extends Kat{
     /**
      * @param nieuweNaam naam voor de Tijger
      */
-    Tijger(String nieuweNaam) {
-        super(nieuweNaam);
+    Tijger(String nieuweNaam, int leeftijd) {
+        super(nieuweNaam, leeftijd);
     }
 
     @Override

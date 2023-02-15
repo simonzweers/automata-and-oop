@@ -11,6 +11,13 @@ public class Auto{
     public String model;
     public int bouwjaar;
 
+    public Auto(String merk, String model, int bouwjaar) {
+        this.merk = merk;
+        this.model = model;
+        this.bouwjaar = bouwjaar;
+
+    }
+
     public void wiebenik() {
         System.out.printf("Mijn merk: %s \nMijn model: %s \nMijn bouwjaar: %d\n\n", merk, model, bouwjaar);
     }
@@ -20,5 +27,10 @@ public class Auto{
     }
     public void knipperlicht() {
         System.out.println("Knipper");
+    }
+
+    @Override
+    public String toString() {
+        return "Mijn merk: " + merk + " \nMijn model: " + model + " \nMijn bouwjaar: " + bouwjaar + "\n\n";
     }
 }

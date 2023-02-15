@@ -4,8 +4,8 @@ public class Hond extends Huisdier{
     /**
      * @param nieuweNaam naam voor de kat
      */
-    Hond(String nieuweNaam) {
-        super(nieuweNaam);
+    Hond(String nieuweNaam, int leeftijd) {
+        super(nieuweNaam, leeftijd);
     }
 
     @Override
