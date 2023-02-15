@@ -80,10 +80,8 @@ Huisdier <|-- Kat : Implements
 Huisdier <|-- Hond : Implements
 Hond <|-- Poedel : Implements
 Kat <|-- Tijger : Implements
-
 ```
 
 Kat en Hond zijn subklassen van Huisdier.
-Tijger en Poedel zijn subklasses van Kat en Hond.
-Dit heb ik zo gedaan zodat er eventueel meer subklasses aan Kat en Hond toegevoegd kunnen worden, zoals Terrier of luipaard.
-
+Tijger en Poedel zijn subclasses van Kat en Hond.
+Dit heb ik zo gedaan zodat er eventueel meer subclasses aan Kat en Hond toegevoegd kunnen worden, zoals Terrier of luipaard.

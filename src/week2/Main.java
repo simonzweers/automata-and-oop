@@ -13,7 +13,7 @@ public class Main {
         System.out.println(auto4);
 
         Huisdier[] dieren = {
-                new Huisdier("jeff", 12),
+                new Hond("jeff", 12),
                 new Kat("mittens", 6),
                 new Hond("billy", 7),
                 new Poedel("princess", 33),
