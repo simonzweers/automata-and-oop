@@ -15,10 +15,12 @@ public class Auto{
         this.merk = merk;
         this.model = model;
         this.bouwjaar = bouwjaar;
-
     }
 
-    public void wiebenik() {
+    /**
+     * Funtie voor het geven van informatie over het object
+     */
+    public void wieBenIk() {
         System.out.printf("Mijn merk: %s \nMijn model: %s \nMijn bouwjaar: %d\n\n", merk, model, bouwjaar);
     }
 
