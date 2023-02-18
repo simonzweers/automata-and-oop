@@ -1,10 +1,10 @@
 package week4.stateMachine1superclass;
 
 public class State {
-    State a() {
+    public State a() {
         return null;
     }
-    State b() {
+    public State b() {
         return null;
     }
 }
