@@ -11,8 +11,6 @@ public class Main {
         Machine machine = new Machine();
         String word;
 
-
-
         for (int i = 0; i < 5; i++) {
             word = randomInputWord(3);
             executeMachine(machine, word);

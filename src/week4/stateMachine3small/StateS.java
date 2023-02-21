@@ -1,6 +1,6 @@
 package week4.stateMachine3small;
 
-public class StateS implements State{
+public class StateS implements IState {
     @Override
     public void a(Machine machine) {
         machine.setState(machine.stateQ);

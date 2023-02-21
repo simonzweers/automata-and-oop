@@ -1,6 +1,6 @@
 package week4.stateMachine3small;
 
-public interface State {
+public interface IState {
 
     void a(Machine machine);
     void b(Machine machine);
