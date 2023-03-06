@@ -12,6 +12,7 @@ public class Main {
         String word;
 
         for (int i = 0; i < 5; i++) {
+            machine.setCurrentState(machine.stateQ);
             word = randomInputWord(2);
             System.out.println("Word: " + word);
             executeMachine(machine, word);

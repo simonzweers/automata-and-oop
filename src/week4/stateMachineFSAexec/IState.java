@@ -1,6 +1,6 @@
 package week4.stateMachineFSAexec;
 
-public interface State {
+public interface IState {
 
     void a(Machine machine);
     void b(Machine machine);

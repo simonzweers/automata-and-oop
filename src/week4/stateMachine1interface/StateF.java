@@ -9,7 +9,6 @@ public class StateF implements State {
     @Override
     public State b() {
         return new StateF();
-
     }
 
     @Override

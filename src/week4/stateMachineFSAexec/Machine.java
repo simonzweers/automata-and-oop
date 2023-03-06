@@ -2,17 +2,18 @@ package week4.stateMachineFSAexec;
 
 public class Machine {
 
-    public State stateQ = new StateQ();
-    public State stateR = new StateR();
-    public State stateS = new StateS();
-    public State stateF = new StateF();
+    public IState stateQ = new StateQ();
+    public IState stateR = new StateR();
+    public IState stateS = new StateS();
+    public IState stateF = new StateF();
 
-    private State currentState = stateQ;
+    private IState currentState = stateQ;
 
-    public void setState(State nextState) {
+    public void setState(IState nextState) {
         this.currentState = nextState;
     }
 
+    // Transities naar andere state
     public void a() {
         currentState.a(this);
     }

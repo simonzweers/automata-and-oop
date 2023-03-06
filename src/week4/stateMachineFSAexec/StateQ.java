@@ -1,6 +1,6 @@
 package week4.stateMachineFSAexec;
 
-public class StateQ implements State{
+public class StateQ implements IState {
     @Override
     public void a(Machine machine) {
         machine.setState(machine.stateQ);
