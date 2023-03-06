@@ -1,6 +1,7 @@
-package week4.stateMachine3small;
+package week4.stateMachine2ExtraState;
 
-public class StateQ implements State{
+public class StateQ implements State {
+
     @Override
     public void a(Machine machine) {
         machine.setState(machine.stateQ);
@@ -9,10 +10,5 @@ public class StateQ implements State{
     @Override
     public void b(Machine machine) {
         machine.setState(machine.stateR);
-    }
-
-    @Override
-    public void c(Machine machine) {
-        machine.setState(machine.stateQ);
     }
 }

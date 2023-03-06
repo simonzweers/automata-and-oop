@@ -1,4 +1,4 @@
-package week4.stateMachine3small;
+package week4.stateMachineFSAexec;
 
 public interface State {
 

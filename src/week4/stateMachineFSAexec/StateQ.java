@@ -1,10 +1,9 @@
-package week4.stateMachine3small;
+package week4.stateMachineFSAexec;
 
-public class StateR implements State{
-
+public class StateQ implements State{
     @Override
     public void a(Machine machine) {
-        machine.setState(machine.stateS);
+        machine.setState(machine.stateQ);
     }
 
     @Override
@@ -14,6 +13,6 @@ public class StateR implements State{
 
     @Override
     public void c(Machine machine) {
-        machine.setState(machine.stateR);
+        machine.setState(machine.stateQ);
     }
 }
