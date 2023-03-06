@@ -6,7 +6,7 @@ public class Machine {
     public final State stateQ = new StateQ();
     public final State stateR = new StateR();
     public final State stateS = new StateS();
-    public final State stateF = new StateS();
+    public final State stateF = new StateF();
 
     public Machine() {
         this.currentState = stateQ; // Starttoestand
@@ -21,12 +21,12 @@ public class Machine {
     }
 
     public void a() {
-        System.out.println("Transitie A");
+        //System.out.println("Transitie A");
         currentState.a(this);
     }
 
     public void b() {
-        System.out.println("transitie B");
+        //System.out.println("transitie B");
         currentState.b(this);
     }
 

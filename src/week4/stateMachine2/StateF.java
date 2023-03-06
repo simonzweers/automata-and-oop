@@ -10,6 +10,5 @@ public class StateF implements State {
     @Override
     public void b(Machine machine) {
         machine.setState(machine.stateF);
-
     }
 }
