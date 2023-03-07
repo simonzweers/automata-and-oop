@@ -1,3 +1,8 @@
+/**
+ * Dit programma is om een state machine met superklasse te testen
+ * @author Simon Zweers
+ * @date 15-02-2023
+ */
 package week4.stateMachine1superclass;
 
 public class TestMachine {

@@ -1,8 +1,15 @@
 package week4.stateMachine1superclass;
 
+/**
+ * Uitvoering van een finite state machine door middel van het state design pattern.
+ * Deze uitvoering gebruikt een superklasse om State klassen te maken.
+ */
 public class Machine {
     private State currentstate = new StateQ();
 
+    /**
+     * Maakt een nieuw Machine object aan
+     */
     public Machine() {
 
     }

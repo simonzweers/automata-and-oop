@@ -1,3 +1,9 @@
+/**
+ * Dit programma test de FSAexec automaat van week 1
+ * @author Simon Zweers
+ * @date 18-02-2023
+ */
+
 package week4.stateMachineFSAexec;
 
 import javax.swing.JFrame;

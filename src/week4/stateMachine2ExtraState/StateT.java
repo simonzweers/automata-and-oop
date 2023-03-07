@@ -1,5 +1,9 @@
 package week4.stateMachine2ExtraState;
 
+/**
+ * StateT klassen voor het veranderen van de huidige staat van het Machine object
+ * Klasse voor de T staat van de finite state machine
+ */
 public class StateT implements State {
 
     @Override

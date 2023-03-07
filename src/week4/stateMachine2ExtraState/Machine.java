@@ -9,6 +9,9 @@ public class Machine {
     public final State stateT = new StateT();
     public final State stateF = new StateF();
 
+    /**
+     * Bij het creëren van een machine object wordt de staat op staat Q gezet
+     */
     public Machine() {
         this.currentState = stateQ; // Starttoestand
     }
@@ -21,11 +24,17 @@ public class Machine {
         this.currentState = nextState;
     }
 
+    /**
+     * Voert transitie a uit
+     */
     public void a() {
         //System.out.println("Transitie A");
         currentState.a(this);
     }
 
+    /**
+     * Voert transitie b uit
+     */
     public void b() {
         //System.out.println("transitie B");
         currentState.b(this);

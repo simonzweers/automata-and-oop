@@ -1,3 +1,9 @@
+/**
+ * Dit programma is om een state machine met interface te testen
+ * @author Simon Zweers
+ * @date 15-02-2023
+ */
+
 package week4.stateMachine1interface;
 
 public class TestMachine {
