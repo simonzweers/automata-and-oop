@@ -2,7 +2,7 @@ package week2;
 
 /**
  * Hond klasse representeerd een huisdier met een naam en leeftijd
- * Hond is een subklasse van {@link #Huisdier Huisdier}
+ * Hond is een subklasse van {@link #Hond Hond}
  */
 public class Poedel extends Hond{
     /**
