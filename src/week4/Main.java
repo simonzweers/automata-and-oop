@@ -6,18 +6,19 @@ import week4.stateMachine2.Machine;
 public class Main {
     public static final int MINIMUM_WORD_LENGTH = 5;
     public static final int MAXIMUM_WORD_LENGTH = 20;
+    public static final int TRANSITION_COUNT = 2;
 
     public static void main(String[] args) {
         Machine machine = new Machine();
         String word;
 
+        // Voer de state machine 5 keer uit
         for (int i = 0; i < 5; i++) {
-            machine.setCurrentState(machine.stateQ);
-            word = randomInputWord(2);
+            machine.resetState();
+            word = randomInputWord(TRANSITION_COUNT);
             System.out.println("Word: " + word);
             executeMachine(machine, word);
         }
-
     }
 
     /**
@@ -44,12 +45,13 @@ public class Main {
     /**
      * Method that executes an input word
      * @param machine Machine that executes the word
-     * @param inputword Input word for the machine
+     * @param inputWord Input word for the machine
      */
-    public static void executeMachine(Machine machine, String inputword) {
-        int sizeOfWord = inputword.length();
+    public static void executeMachine(Machine machine, String inputWord) {
+        int sizeOfWord = inputWord.length();
         for (int i = 0; i < sizeOfWord; i++) {
-            switch (inputword.charAt(i)) {
+            System.out.print("Old state: " + machine); // Print de staat voor de transitie
+            switch (inputWord.charAt(i)) {
                 case 'a':
                     machine.a();
                     break;
@@ -59,7 +61,7 @@ public class Main {
                 default:
                     break;
             }
-            System.out.println(machine);
+            System.out.println(" | New state: " + machine); // Print de staat na de transitie
         }
     }
 }

@@ -1,3 +1,9 @@
+/**
+ * Dit programma is om een state machine te testen
+ * @author Simon Zweers
+ * @date 15-02-2023
+ */
+
 package week4.stateMachine2;
 
 public class Main {

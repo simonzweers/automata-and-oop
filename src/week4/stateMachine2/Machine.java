@@ -1,5 +1,9 @@
 package week4.stateMachine2;
 
+/**
+ * Uitvoering van een finite state machine door middel van het state design pattern.
+ * Deze uitvoering gebruikt een interface om State klassen te maken.
+ */
 public class Machine {
     private State currentState;
 
@@ -13,15 +17,22 @@ public class Machine {
     }
 
     /**
-     *
+     * Functie voor het veranderen van de staat
+     * Gebruikt in State klassen
      * @param nextState De volgende staat van de State Machine
      */
-    public void setState(State nextState) {
+    void setState(State nextState) {
         this.currentState = nextState;
     }
 
-    public void setCurrentState(State currentState) {
-        this.currentState = currentState;
+    /**
+     * Functie voor het resetten van de huidige staat naar een andere staat
+     * Reset de machine naar Staat Q
+     */
+    public void resetState() {
+        if (this.currentState != stateQ) {
+            this.currentState = stateQ;
+        }
     }
 
     public void a() {
@@ -36,6 +47,6 @@ public class Machine {
 
     @Override
     public String toString() {
-        return ("Current state: " + this.currentState.getClass().getSimpleName());
+        return (this.currentState.getClass().getSimpleName());
     }
 }

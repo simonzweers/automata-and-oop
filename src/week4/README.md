@@ -1,5 +1,4 @@
-
-# Dit is de readme voor week 4
+# Week 4
 
 In week 4 heb ik 2 verschillende soorten implementaties van het state design pattern gedaan.
 Het state diagram ziet er als volgt uit:
