@@ -1,12 +1,16 @@
 package week2;
 
+/**
+ * Huisdier superklasse representerend voor een bepaald huisdier.
+ */
 public class Huisdier {
     private final String naam;
     public int leeftijd;
 
     /**
-     * Naam voor het huisdier
-     * @param nieuweNaam naam voor het huidier
+     * Maakt een nieuw Huisdier object aan
+     * @param nieuweNaam naam voor het huisdier
+     * @param leeftijd leeftijd van het dier
      */
     Huisdier(String nieuweNaam, int leeftijd) {
         this.naam = nieuweNaam;

@@ -1,5 +1,9 @@
 package week2;
 
+/**
+ * Tijger klasse representeerd een huisdier met een naam en leeftijd
+ * Tijger is een subklasse van {@link #Kat Kat}
+ */
 public class Tijger extends Kat{
 
     /**

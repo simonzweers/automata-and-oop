@@ -1,3 +1,10 @@
+/**
+ * Dit programma is een begin in het maken van objecten uit klassen
+ * Het doel van dit programma is om meerdere objecten aan te maken en
+ * @author Simon Zweers
+ * @date 14-02-2023
+ */
+
 package week2;
 
 public class Main {

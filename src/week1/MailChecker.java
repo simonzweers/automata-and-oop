@@ -1,3 +1,9 @@
+/**
+ * Dit programma checkt email adressen op dat het geldige hva email-adressen zijn
+ * @author Simon Zweers
+ * @date 08-02-2023
+ */
+
 package week1;
 
 import java.util.regex.Matcher;

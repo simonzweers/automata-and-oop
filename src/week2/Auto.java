@@ -6,11 +6,21 @@
 
 package week2;
 
+
+/**
+ * Auto klasse representerend voor een bebaalde auto.
+ */
 public class Auto{
     public String merk;
     public String model;
     public int bouwjaar;
 
+    /**
+     * Creëert een nieuw auto object
+     * @param merk      merk van de auto
+     * @param model     model van de auto
+     * @param bouwjaar  bouwjaar van de auto
+     */
     public Auto(String merk, String model, int bouwjaar) {
         this.merk = merk;
         this.model = model;
@@ -24,9 +34,16 @@ public class Auto{
         System.out.printf("Mijn merk: %s \nMijn model: %s \nMijn bouwjaar: %d\n\n", merk, model, bouwjaar);
     }
 
+    /**
+     * Functie voor het gas geven
+     */
     public void gassen() {
         System.out.println("Vroommmm!");
     }
+
+    /**
+     * Functie voor het knipperen van het knipperlicht
+     */
     public void knipperlicht() {
         System.out.println("Knipper");
     }

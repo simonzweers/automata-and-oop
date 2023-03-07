@@ -1,8 +1,14 @@
 package week2;
 
+/**
+ * Hond klasse representeerd een huisdier met een naam en leeftijd
+ * Hond is een subklasse van {@link #Huisdier Huisdier}
+ */
 public class Poedel extends Hond{
     /**
+     * Maakt een nieuw Poedel object aan
      * @param nieuweNaam naam voor de poedel
+     * @param leeftijd leeftijd voor de poedel
      */
     Poedel(String nieuweNaam, int leeftijd) {
         super(nieuweNaam, leeftijd);
