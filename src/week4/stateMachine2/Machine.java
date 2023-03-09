@@ -7,13 +7,22 @@ package week4.stateMachine2;
 public class Machine {
     private State currentState;
 
+    private static Machine instance = null;
+
     public final State stateQ = new StateQ();
     public final State stateR = new StateR();
     public final State stateS = new StateS();
     public final State stateF = new StateF();
 
-    public Machine() {
+    private Machine() {
         this.currentState = stateQ; // Starttoestand
+    }
+
+    public static Machine getInstance() {
+        if (instance == null) {
+            Machine.instance = new Machine();
+        }
+        return Machine.instance;
     }
 
     /**

@@ -9,7 +9,7 @@ public class Main {
     public static final int TRANSITION_COUNT = 2;
 
     public static void main(String[] args) {
-        Machine machine = new Machine();
+        Machine machine = Machine.getInstance();
         String word;
 
         // Voer de state machine 5 keer uit
