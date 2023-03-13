@@ -1,9 +1,10 @@
 package week5;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -97,6 +98,22 @@ public class Menu {
     }
 
     /**
+     * Update's the text file with the current contents of the animals array
+     */
+    public void updateAnimalsFile() {
+        try {
+            PrintWriter output = new PrintWriter(animalsFile.getPath());
+            output.print("");
+            for (int i = 0; i < animalObjectArray.size(); i++) {
+                output.println(animalObjectArray.get(i).getSpecies() + " - " + animalObjectArray.get(i).getName());
+            }
+            output.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("Er ging wat mis");
+        }
+    }
+
+    /**
      * Method to print all objects in an arraylist to console
      */
     public void printContent() {
@@ -109,22 +126,33 @@ public class Menu {
         System.out.println();
     }
 
+    /**
+     * Asks for name and adds animal to animals array
+     */
     private void addAnimal() {
         System.out.print("Please enter the new animals name: ");
         String name = userInputScanner.next();
         System.out.print("Please enter the new animals species: ");
         String species = userInputScanner.next();
         animalObjectArray.add(new Animal(name, species));
+        updateAnimalsFile();
     }
 
-    private void changeAnimalData() {
+    /**
+     * Changes the name of an animal in the animal array
+     */
+    private void changeAnimalName() {
         System.out.print("Please enter the number of the animal you want to change: ");
         int animalindex = userInputScanner.nextInt() - 1;
         System.out.print("Please enter the new name for the animal: ");
-        String newName = userInputScanner.next();
+        String newName = userInputScanner.next(); // TODO: Fix scanner input to not ignore whitespaces
         animalObjectArray.get(animalindex).setName(newName);
+        updateAnimalsFile();
     }
 
+    /**
+     * Method to start different actions from a menu
+     */
     void changeMode() {
         System.out.print(
                 "Choose the action you want to perform:\n" +
@@ -146,7 +174,7 @@ public class Menu {
                 changeMode();
                 break;
             case 3:
-                changeAnimalData();
+                changeAnimalName();
                 changeMode();
                 break;
             case 4:
