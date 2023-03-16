@@ -9,7 +9,6 @@ package week5;
 public class Animal {
     private String name;
     private String species;
-    private int leeftijd;
 
     Animal(String name, String species) {
         this.name = name;

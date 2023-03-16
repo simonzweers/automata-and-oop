@@ -23,7 +23,10 @@ public class Menu {
     public ArrayList<Animal> animalObjectArray = new ArrayList<>();
 
     private Menu() {
-        
+        getFileName();
+        createArray();
+        printContent();
+        changeMode();
     }
 
     public static Menu getInstance() {
@@ -37,12 +40,12 @@ public class Menu {
      * Method to register obtain a file name of the file to edit
      */
     public void getFileName() {
-        // Filenaam van user verkrijgen
+        // Get filename from user
         userInputScanner = new Scanner(System.in);
         System.out.print("Input the filename of the file you want to create/edit: ");
         String fileName = userInputScanner.next();
 
-        // File object aanmaken
+        // Creating file object if it doesn't exisst
         animalsFile = null;
         try {
             animalsFile = new File("src\\week5\\" + fileName);
@@ -118,7 +121,7 @@ public class Menu {
      */
     public void printContent() {
         for (int i = 0; i < animalObjectArray.size(); i++) {
-            System.out.printf("%d. %-12s | %s\n",
+            System.out.printf("%3d. %-12s | %s\n",
                     i + 1,
                     animalObjectArray.get(i).getSpecies(),
                     animalObjectArray.get(i).getName());
